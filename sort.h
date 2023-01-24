@@ -31,6 +31,15 @@ void print_list(const listint_t *list);
  * @size: Number of elements in @array
  */
 void print_array(const int *array, size_t size);
+
+/* swap function */
+void swap(int *x, int *y);
+/* swapping function */
+void swap_nodes(listint_t **h, listint_t **n1, listint_t *n2);
+/* bubble sort */
+void bubble_sort(int *array, size_t size);
+/* insertion sort*/
+void insertion_sort_list(listint_t **list);
 /* selection sort */
 void selection_sort(int *array, size_t size);
 
