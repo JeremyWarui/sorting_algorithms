@@ -20,7 +20,7 @@ void swap_ints(int *a, int *b)
  * @array: An array of integers
  * @size: The size of the array
  *
- * Description: Uses the Knuthinterval sequence
+ * Description: Uses the Knuth interval sequence
  */
 void shell_sort(int *array, size_t size);
 {
@@ -32,7 +32,7 @@ void shell_sort(int *array, size_t size);
 	for (space = 1; space < (size / 3);)
 		space = space * 3 + 1;
 
-	for (;space >= 1; space /= 3)
+	for (; space >= 1; space /= 3)
 	{
 		for (i = space; i < size; i++)
 		{
