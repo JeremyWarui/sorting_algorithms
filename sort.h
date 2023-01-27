@@ -36,6 +36,12 @@ void shell_sort(int *array, size_t size);
 /* swap function */
 void swap(int *x, int *y);
 /* swapping function */
+void swap_node_ahead(listint_t **list, listint_t **tail, listint_t **shaker);
+/* swapping function */
+void swap_node _behind(listint_t **list, listint_t **tail, listint_t **shaker);
+/* cocktail shaker algorithm */
+void cocktail_sort_list(listint_t **list);
+/* swapping function */
 void swap_nodes(listint_t **h, listint_t **n1, listint_t *n2);
 /* bubble sort */
 void bubble_sort(int *array, size_t size);
