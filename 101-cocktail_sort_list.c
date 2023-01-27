@@ -62,8 +62,10 @@ void cocktail_sort_list(listint_t **list)
 
 	if (list == NULL || *list == NULL || (*list)->next == NULL)
 		return;
+
 	for (tail = *list; tail->next != NULL;)
 		tail = tail->next;
+
 	while (shaken_not_stirred == false)
 	{
 		shaken_not_stirred = true;
@@ -72,7 +74,7 @@ void cocktail_sort_list(listint_t **list)
 			if (shaker->n > shaker->next->n)
 			{
 				swap_node_ahead(list, &tail, &shaker);
-				print_list((constg listint_t *)*list);
+				print_list((const listint_t *)*list);
 				shaken_not_stirred = false;
 			}
 		}

@@ -18,7 +18,18 @@ typedef struct listint_s
 	struct listint_s *next;
 } listint_t;
 
+/* Comparison direction macros for bitonic sort */
+#define UP 0
+#define DOWN 1
 
+/**
+ * enum bool - Enumeration of boolean values
+ */
+typedef enum bool
+{
+	false = 0,
+	true
+} bool;
 /**
  * print_list - Prints a list of integers
  * @list: The list to be printed
@@ -38,7 +49,7 @@ void swap(int *x, int *y);
 /* swapping function */
 void swap_node_ahead(listint_t **list, listint_t **tail, listint_t **shaker);
 /* swapping function */
-void swap_node _behind(listint_t **list, listint_t **tail, listint_t **shaker);
+void swap_node_behind(listint_t **list, listint_t **tail, listint_t **shaker);
 /* cocktail shaker algorithm */
 void cocktail_sort_list(listint_t **list);
 /* swapping function */
