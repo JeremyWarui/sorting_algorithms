@@ -12,6 +12,7 @@ void cocktail_sort_list(listint_t **list);
  * @shaker: A pointer to the current swapping node of the cocktail shaker algorithm
  */
 
+
 void swap_node_ahead(listint_t **list, listint_t **tail, listint_t **shaker)
 {
 	listint_t *tmp = (*shaker)->next;
@@ -57,6 +58,7 @@ void swap_node_behind(listint_t **list, listint_t **tail, listint_t **shaker)
 	tmp->prev = *shaker;
 	*shaker = tmp;
 }
+
 /**
  * cocktail_sort_list - Sort a listint_t doubly-linked listof integers in
  * ascending order using the cocktail shaker algorithm
