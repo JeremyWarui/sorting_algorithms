@@ -31,7 +31,8 @@ void print_list(const listint_t *list);
  * @size: Number of elements in @array
  */
 void print_array(const int *array, size_t size);
-
+/* sorting function */
+void shell_sort(int *array, size_t size);
 /* swap function */
 void swap(int *x, int *y);
 /* swapping function */

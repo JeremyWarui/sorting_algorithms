@@ -22,7 +22,7 @@ void swap_ints(int *a, int *b)
  *
  * Description: Uses the Knuth interval sequence
  */
-void shell_sort(int *array, size_t size);
+void shell_sort(int *array, size_t size)
 {
 	size_t gap, i, j;
 
