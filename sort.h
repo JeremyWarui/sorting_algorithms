@@ -70,6 +70,7 @@ void quick_sort(int *array, size_t size);
 void merge_sort(int *array, size_t size);
 /* heap sort */
 void heap_sort(int *array, size_t size);
-
+/* radix sort */
+void radix_sort(int *array, size_t size);
 
 #endif
