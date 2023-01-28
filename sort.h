@@ -24,6 +24,8 @@ typedef struct listint_s
 
 /**
  * enum bool - Enumeration of boolean values
+ * @false: false
+ * @true: true
  */
 typedef enum bool
 {
