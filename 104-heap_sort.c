@@ -71,9 +71,8 @@ void heap_sort(int *array, size_t size)
 		return;
 
 	lim = size;
-	i = 0;
 
-	while (lim > 1)
+	for (i = 0; lim > 1; lim--)
 	{
 		rec_heap(array, i, size, lim);
 		if (array[i] >= array[lim - 1])
@@ -81,6 +80,5 @@ void heap_sort(int *array, size_t size)
 			swap_int(array, i, lim - 1);
 			print_array(array, size);
 		}
-		lim--;
 	}
 }
