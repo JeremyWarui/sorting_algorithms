@@ -39,7 +39,7 @@ void rec_heap(int *arr, int n, size_t size, int limit)
 	if (n2 + 1 >= limit)
 		return;
 	if (n2 + 2 < limit)
-		large = (arr[i2 + 1] > arr[i2 + 2]) ? (i2 + 1) : (i2 + 2);
+		large = (arr[n2 + 1] > arr[n2 + 2]) ? (n2 + 1) : (n2 + 2);
 	else
 		large = n2 + 1;
 
